@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulário</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/plugins/jquery.mask.min.js"></script>
+		<script type="text/javascript" src="js/formulario.js"></script>
+	</head>
+	<body>
+
+		<form name="formCadastro" action="exemplo.php" method="post" onsubmit="return validacao()">
+			<h1>Formulário</h1>
+			<label>Nome</label><br>
+			<input type="text" name="nome" id="nome"/>
+			<label id='msgNome'>Preencha o nome completo</label>
+			<br/>
+
+			<label>CPF</label><br>
+			<input type="text" name="cpf" id="cpf"/>
+			<label id='msgCpf'>Preencha o CPF corretamente</label>
+			<br/>
+
+			<label>CNPJ</label><br>
+			<input type="text" name="cnpj" id="cnpj"/>
+			<label id='msgCnpj'>Preencha o CNPJ corretamente</label>
+			<br/>
+
+			<label>RG</label><br/>
+			<input type="text" name="rg" id="rg"/>
+			<label id='msgRg'>Preencha o RG corretamente</label>
+			<br/>
+
+			<label>Telefone</label><br>
+			<input type="text" name="telefone" id="telefone"/>
+			<label id='msgTelefone'>Preencha o telefone corretamente</label>
+			<br/>
+
+			<label>Celular</label><br>
+			<input type="text" name="celular" id="celular"/>
+			<label id='msgCelular'>Preencha o celular corretamente</label>
+			<br/>
+
+			<label>Salário</label><br>
+			<input type="text" name="salario" id="salario"/>
+			<label id='msgSalario'>Preencha o salário corretamente</label>
+			<br/>
+
+			<label>CEP</label><br>
+			<input type="text" name="cep" id="cep"/>
+			<label id='msgCep'>Preencha o CEP corretamente</label>
+			<br/>
+
+			<label>Data de Nascimento</label><br>
+			<input type="text" name="dataNascimento" id="dataNascimento"/>
+			<label id='msgDataNasc'>Preencha a Data de Nascimento</label>
+			<br/>
+
+			<label>Placa do Carro</label><br>
+			<input type="text" name="placa" id="placa"/>
+			<label id='msgPlaca'>Preencha a placa corretamente</label>
+			<br/>
+
+			<input type="submit" name="enviar" value="Enviar" id="enviar"/>
+		</form>
+	</body>
+</html>

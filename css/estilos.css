@@ -1,0 +1,55 @@
+body{
+	margin: 0;
+	background: #CED8F6;
+}
+h1{
+	text-align: center;
+	font-family: arial;
+	font-size: 20pt;
+	margin: 0;
+}
+
+form{
+	background: #E0ECF8;
+	width: 300px;
+	height: 645px;
+	padding: 5px;
+	margin: 0 auto;
+	font-family: arial;
+	font-size: 11pt;
+}
+
+input{
+	width: 240px;
+	margin: 3px auto;
+	display: block;
+	border: 1px solid #00F;
+}
+
+label{
+	margin: 0 15px;
+}
+
+#enviar{
+	height: 30px;
+	width: 60px;
+	background:#CED8F6;
+	cursor: pointer;
+	margin: 0 auto;
+	display: block;
+}
+
+#enviar:hover{
+	background: #E0E6F8;
+}
+
+#enviar:active{
+	background: #A9BCF5;
+}
+
+#msgNome, #msgCpf, #msgCnpj, #msgRg, #msgTelefone, #msgCelular, #msgSalario, #msgCep, #msgDataNasc, #msgPlaca{
+	margin: 0 30px;
+	font-size: 13px;
+	color: #FF0000;
+	display: none;
+}
