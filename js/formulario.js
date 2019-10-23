@@ -187,6 +187,7 @@ function validacao(){
 		return false;
 	}
 	else{
+		alert('Cadastro efetuado com sucesso');
 		return true;
 	}
 }
