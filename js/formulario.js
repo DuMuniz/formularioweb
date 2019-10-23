@@ -79,67 +79,107 @@ function validacao(){
 
 	/*Variável para verificar se o campo foi preenchido de forma errada*/
 	var erro = false;   /*false quer dizer que ainda não tem erro*/
-	var msg;			/*Exibir mensagem de erro no campo*/
 
 
 	/*Validação para o campo nome (Se o campo não tem nome e sobrenome)*/
-	if (nome.indexOf(' ')  == -1){
+	if ((nome.indexOf(' ')  == -1) && (nome.length > 0 )){
 		document.getElementById('msgNome').style.display='inline';
 		erro = true;
 	}
+	/*Verifica se o campo nome está vazio*/
+	else if(nome.length == ""){
+		document.getElementById('nomeVazio').style.display='inline';
+			erro = true;
+	}
 
 	/*Validação para o campo CPF*/
-	if (cpf.length != 14) {
+	if ((cpf.length != 14) && (cpf.length > 0)) {
 		document.getElementById('msgCpf').style.display='inline';
 		erro = true;
 	}
+	else if(cpf.length == ""){
+		document.getElementById('cpfVazio').style.display='inline';
+			erro = true;
+	}
 
 	/*Validação para o campo CNPJ*/
-	if(cnpj.length != 19){
+	if((cnpj.length != 19) && (cnpj.length > 0)){
 		document.getElementById('msgCnpj').style.display='inline';
 		erro = true;
 	}
+	else if(cnpj.length == ""){
+		document.getElementById('cnpjVazio').style.display='inline';
+			erro = true;
+	}
 
 	/*Validação para o campo RG*/
-	if (rg.length != 12) {
+	if ((rg.length != 12) && (rg.length > 0)) {
 		document.getElementById('msgRg').style.display='inline';
 		erro = true;
 	}
+	else if(rg.length == ""){
+		document.getElementById('rgVazio').style.display='inline';
+			erro = true;
+	}
 
 	/*Validação do campo telefone*/
-	if(telefone.length != 14){
+	if((telefone.length != 14) && (telefone.length > 0)){
 		document.getElementById('msgTelefone').style.display='inline';
 		erro = true;
 	}
+	else if(telefone.length == ""){
+		document.getElementById('telefoneVazio').style.display='inline';
+			erro = true;
+	}
 
 	/*Validação do campo celular*/
-	if (celular.length != 14){
+	if ((celular.length != 14) && (celular.length > 0 )){
 		document.getElementById('msgCelular').style.display='inline';
 		erro = true;
 	}
+	else if(celular.length == ""){
+		document.getElementById('celularVazio').style.display='inline';
+			erro = true;
+	}
 
 	/*Validação do campo salário*/
-	if (salario.length < 4) {
+	if ((salario.length < 4) && (salario.length > 0)){
 		document.getElementById('msgSalario').style.display='inline';
 		erro = true;
 	}
+	else if(salario.length == ""){
+		document.getElementById('salarioVazio').style.display='inline';
+			erro = true;
+	}
 
 	/*Validação do campo CEP*/
-	if(cep.length != 9){
+	if((cep.length != 9) && (cep.length > 0 )) {
 		document.getElementById('msgCep').style.display='inline';
 		erro = true;
 	}
+	else if(cep.length == ""){
+		document.getElementById('cepVazio').style.display='inline';
+			erro = true;
+	}
 
 	/*Validação do campo Data de Nascimento*/
-	if (dataNascimento.length != 10){
+	if ((dataNascimento.length != 10) && (dataNascimento.length > 0)){
 		document.getElementById('msgDataNasc').style.display='inline';
 		erro = true;
 	}
+	else if(dataNascimento.length == ""){
+		document.getElementById('dataVazio').style.display='inline';
+			erro = true;
+	}
 
 	/*Validação do campo placa de carro*/
-	if(placa.length != 8){
+	if((placa.length != 8) && (placa.length > 0)){
 		document.getElementById('msgPlaca').style.display='inline';
 		erro = true;
+	}
+	else if(placa.length == ""){
+		document.getElementById('placaVazio').style.display='inline';
+			erro = true;
 	}
 
 	/*Verifica se o formulário tem erros, se houver não faz o submit*/
@@ -149,17 +189,4 @@ function validacao(){
 	else{
 		return true;
 	}
-
-	/*Apenas um teste para ver se o javascript recuperava os campos corretamente*/
-	/*document.write('O nome digitado é: ' + nome);
-	document.write('  O CPF digitado é: ' + cpf);
-	document.write('  O CNPJ digitado é: ' + cnpj);
-	document.write('  O RG digitado é: ' + rg);
-	document.write('  O telefone digitado é: ' + telefone);
-	document.write('  O celular digitado é: ' + celular);
-	document.write('  O salario digitado é: ' + salario);
-	document.write('  O CEP digitado é: ' + cep);
-	document.write('  A Data de Nascimento é: ' + dataNascimento);
-	document.write('  A Placa digitada é: ' + placa);
-	return false;*/
 }

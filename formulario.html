@@ -13,53 +13,63 @@
 		<form name="formCadastro" action="exemplo.php" method="post" onsubmit="return validacao()">
 			<h1>Formulário</h1>
 			<label>Nome</label><br>
-			<input type="text" name="nome" id="nome"/>
+			<input type="text" name="nome" id="nome" placeholder="Ex: João da Silva"/>
 			<label id='msgNome'>Preencha o nome completo</label>
+			<label id='nomeVazio'>Preencha este campo</label>
 			<br/>
 
 			<label>CPF</label><br>
-			<input type="text" name="cpf" id="cpf"/>
+			<input type="text" name="cpf" id="cpf" placeholder="Ex: 000.000.000-00"/>
 			<label id='msgCpf'>Preencha o CPF corretamente</label>
+			<label id='cpfVazio'>Preencha este campo</label>
 			<br/>
 
 			<label>CNPJ</label><br>
-			<input type="text" name="cnpj" id="cnpj"/>
+			<input type="text" name="cnpj" id="cnpj" placeholder="Ex: 000.000.000/0000-00"/>
 			<label id='msgCnpj'>Preencha o CNPJ corretamente</label>
+			<label id='cnpjVazio'>Preencha este campo</label>
 			<br/>
 
 			<label>RG</label><br/>
-			<input type="text" name="rg" id="rg"/>
+			<input type="text" name="rg" id="rg" placeholder="Ex: 00.000.000-0"/>
 			<label id='msgRg'>Preencha o RG corretamente</label>
+			<label id='rgVazio'>Preencha este campo</label>
 			<br/>
 
 			<label>Telefone</label><br>
-			<input type="text" name="telefone" id="telefone"/>
+			<input type="text" name="telefone" id="telefone" placeholder="Ex: (00) 0000-0000"/>
 			<label id='msgTelefone'>Preencha o telefone corretamente</label>
+			<label id='telefoneVazio'>Preencha este campo</label>
 			<br/>
 
 			<label>Celular</label><br>
-			<input type="text" name="celular" id="celular"/>
+			<input type="text" name="celular" id="celular" placeholder="Ex: (00) 0000-00000"/>
 			<label id='msgCelular'>Preencha o celular corretamente</label>
+			<label id='celularVazio'>Preencha este campo</label>
 			<br/>
 
 			<label>Salário</label><br>
-			<input type="text" name="salario" id="salario"/>
+			<input type="text" name="salario" id="salario" placeholder="Ex: 1.000,00"/>
 			<label id='msgSalario'>Preencha o salário corretamente</label>
+			<label id='salarioVazio'>Preencha este campo</label>
 			<br/>
 
 			<label>CEP</label><br>
-			<input type="text" name="cep" id="cep"/>
+			<input type="text" name="cep" id="cep" placeholder="Ex: 00000-000"/>
 			<label id='msgCep'>Preencha o CEP corretamente</label>
+			<label id='cepVazio'>Preencha este campo</label>
 			<br/>
 
 			<label>Data de Nascimento</label><br>
-			<input type="text" name="dataNascimento" id="dataNascimento"/>
+			<input type="text" name="dataNascimento" id="dataNascimento" placeholder="Ex: 01/01/2000"/>
 			<label id='msgDataNasc'>Preencha a Data de Nascimento</label>
+			<label id='dataVazio'>Preencha este campo</label>
 			<br/>
 
 			<label>Placa do Carro</label><br>
-			<input type="text" name="placa" id="placa"/>
+			<input type="text" name="placa" id="placa" placeholder="Ex: AAA-0000"/>
 			<label id='msgPlaca'>Preencha a placa corretamente</label>
+			<label id='placaVazio'>Preencha este campo</label>
 			<br/>
 
 			<input type="submit" name="enviar" value="Enviar" id="enviar"/>

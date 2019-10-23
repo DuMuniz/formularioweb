@@ -47,7 +47,12 @@ label{
 	background: #A9BCF5;
 }
 
-#msgNome, #msgCpf, #msgCnpj, #msgRg, #msgTelefone, #msgCelular, #msgSalario, #msgCep, #msgDataNasc, #msgPlaca{
+#msgNome, #msgCpf, #msgCnpj, #msgRg, 
+#msgTelefone, #msgCelular, #msgSalario, 
+#msgCep, #msgDataNasc, #msgPlaca,
+#nomeVazio, #cpfVazio, #cnpjVazio,
+#rgVazio, #telefoneVazio, #celularVazio,
+#salarioVazio, #cepVazio, #dataVazio, #placaVazio{
 	margin: 0 30px;
 	font-size: 13px;
 	color: #FF0000;
