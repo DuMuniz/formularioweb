@@ -133,7 +133,7 @@ function validacao(){
 	}
 
 	/*Validação do campo celular*/
-	if ((celular.length != 14) && (celular.length > 0 )){
+	if ((celular.length != 14) && (celular.length !=15) && (celular.length > 0 )){
 		document.getElementById('msgCelular').style.display='inline';
 		erro = true;
 	}
